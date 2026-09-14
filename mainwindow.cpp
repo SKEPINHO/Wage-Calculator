@@ -30,4 +30,6 @@ void MainWindow::vypocetMzdy()
     ui->label_vysledek->setText(QString::number(result) + " CZK");
 
 
+
+
 }
