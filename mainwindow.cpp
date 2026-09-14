@@ -28,4 +28,6 @@ void MainWindow::vypocetMzdy()
 
     double result = ui->doublespin_mzda->value() - Dan - Socialni - Zdravotni;
     ui->label_vysledek->setText(QString::number(result) + " CZK");
+
+
 }
