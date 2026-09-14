@@ -34,10 +34,10 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_hruba">
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_vysledek">
        <property name="text">
-        <string>Hrubá mzda:</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -46,29 +46,21 @@
        <property name="suffix">
         <string> CZK</string>
        </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
        <property name="maximum">
         <double>1000000.000000000000000</double>
        </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="label_zdraV">
-       <property name="text">
-        <string/>
+       <property name="stepType">
+        <enum>QAbstractSpinBox::StepType::AdaptiveDecimalStepType</enum>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
-      <widget class="QLabel" name="label_vysledek">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_hruba">
        <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_zdra">
-       <property name="text">
-        <string>Zdravotní pojištění:</string>
+        <string>Hrubá mzda:</string>
        </property>
       </widget>
      </item>
@@ -86,13 +78,6 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_dan">
-       <property name="text">
-        <string>Daň z příjmu:</string>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="1">
       <widget class="QLabel" name="label_danV">
        <property name="text">
@@ -100,20 +85,35 @@
        </property>
       </widget>
      </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_dan">
+       <property name="text">
+        <string>Daň z příjmu:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_zdraV">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_zdra">
+       <property name="text">
+        <string>Zdravotní pojištění:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="pushButton_exportPDF">
+       <property name="text">
+        <string>Export PDF</string>
+       </property>
+      </widget>
+     </item>
     </layout>
-   </widget>
-   <widget class="QRadioButton" name="radioButton">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>0</y>
-      <width>99</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>RadioButton</string>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

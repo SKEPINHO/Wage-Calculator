@@ -20,7 +20,13 @@ public:
 public slots:
     void vypocetMzdy();
 
+    void exportPDF();
+
 private:
     Ui::MainWindow *ui;
+
+    QString formatMoney(double value);
 };
+
+
 #endif // MAINWINDOW_H
